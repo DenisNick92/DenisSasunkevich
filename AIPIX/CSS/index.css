@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+}
+
+* {
+    outline: none;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header{
+    background: #FFF;
+
+    /* Container shadow */
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.08);
+    /* width: 1366px; */
+    height: 56px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+
+.header_left{
+    width: 88px;
+    height: 24.231px;
+    flex-shrink: 0;
+    padding-top: 16px;
+    padding-left: 24px;
+    /* padding-right: 356px; */
+}
+
+.header_search{
+display: flex; 
+width: 429px;
+height: 40px;
+padding-left: 16px;
+align-items: center;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid var(--bright-basic-color-lines-day, #E7E7E7);
+background: var(--bright-basic-color-bg-regular-day, #ECECF4);
+
+color: var(--bright-basic-color-text-secondary-night, #7E8892);
+
+/* Typesetting/P3 14 Regular */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+margin-top: 8px;
+
+}
+
+.header_tab_settings{
+    display: flex;
+    height: 48px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;    
+    flex-direction: column;
+    border-radius: 8px;
+    background: var(--bright-basic-color-white-day, #FFF); 
+}
+
+.tab_icon{
+    width: 24px;
+height: 24px;
+flex-shrink: 0;
+}
+
+.header_tab{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: space-between;
+   margin-right: 24px;
+   
+}
+
+
+.tab_text{
+    color: var(--bright-basic-color-text-main-day, #1B1D23);
+    text-align: center;
+    
+    /* Typesetting/P5 12 Regular */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */   
+}
+
+.header_button{
+
+display: flex;
+height: 32px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+border: transparent;
+border-radius: 8px;
+background: var(--bright-basic-color-bg-regular-day, #ECECF4);
+
+color: var(--bright-basic-color-text-main-day, #1B1D23);
+
+/* Typesetting/P3 14 Regular */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+white-space: nowrap; ;
+margin-right: 16px;
+margin-left: 16px;
+}
+
+.header_button_news{
+background-color: #306BFF;
+width: 19px;
+height: 16px;
+color: #FFF;
+
+/* Typesetting/P5 12 Regular */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 125% */
+border-radius: 10px;
+overflow: hidden;
+
+}
+
+.avatar{
+ width: 32px;
+    height: 32px; 
+border-radius: 50%;
+overflow: hidden;
+}
+
+
+
+
+
+.main{
+background-color: #F9F9F9;
+
+}
+
+.profile{
+    width: 283px;
+    height: 347px;
+    flex-shrink: 0;
+    fill: #FFF;
+    filter: drop-shadow(0px 1px 16px rgba(0, 0, 0, 0.08));
+    margin: 28px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.profile_background{
+    border-radius: 20px;
+    margin: 18px;
+}
+
+.avatar_main{
+    width: 90px;
+    height: 90px; 
+   border-radius: 50%;
+   overflow: hidden;
+   margin-top: -65px;
+   margin-left: 96px;
+   border: solid white 5px;
+   }
+
+   .profile_name{
+    color: var(--bright-basic-color-text-main-day, #1B1D23);
+    text-align: center;
+    
+    /* Interactive/Int2 16 Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+
+   }
+
+.user_info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 84px;
+    
+   }
+
+   .position{
+    color: var(--bright-basic-color-text-secondary-night, #7E8892);
+    text-align: center;
+    
+    /* Typesetting/P5 12 Regular */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */ 
+   }
+   #dott{
+    width: 3px;
+    height: 3px;
+    flex-shrink: 0;
+    fill: var(--bright-basic-color-lines-day, #E7E7E7);
+    margin-left: 4px;
+    margin-right: 4px;
+   }
+
+   .status{
+    color: var(--bright-basic-color-primary-day, #306BFF);
+text-align: center;
+
+/* Typesetting/P5 12 Regular */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 15px; /* 125% */
+   }
