@@ -320,3 +320,79 @@ color: rgba(126, 136, 146, 1);
 li:hover {
     background: rgba(227, 235, 255, 1); /* Цвет фона под ссылкой */ 
     color: rgba(27, 29, 35, 1); /* Цвет ссылки */ }
+
+.teamhead{
+display: flex;
+flex-direction: row;
+gap: 135px;
+
+}
+
+.view{
+    color: var(--bright-basic-color-text-secondary-night, #7E8892);
+    text-align: center;
+    
+    /* Typesetting/P3 14 Regular */
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+
+}
+
+.blockname{
+    color: var(--bright-basic-color-text-main-day, #1B1D23);
+    text-align: center;
+    
+    /* Interactive/Int2 16 Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+
+}
+
+.photo{
+    background-image: url(https://s3-alpha-sig.figma.com/img/6a06/e332/a6b002da9feb0cce7f7a66e2d3406a5a?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WyWHJDmhYt0md6xV0jPnomWarhh2p5Wafk0LlOF1uavf8MAjZNzNwdxWKGugmbaJ4s1Lh9p-YfbfMt6Q3ZOg2H-SIM0ELJfYUFCG7oPrPkBUyGIh7ZipAHY~aAxUUO4MkcqA-IpEuzdO1lqL1o9crGcTSGtYG4KUmKT5RlufE9E-hjZe8ImP8dBtt6J~N1h3VllQLi5iV485RnZ0Do2NKDcohXjjVo2thDUwSNhOXTQNzJBmZUHEa9Rmgh9z3h57pkMAElWLM2fMVo~p6J5QXKx25VnEwSN4bffzs893Nsl9HlXjufcBEzUn693TwD~lbBVZRs-rFMVVoG2YK1rSYw__);
+    width: 36px;
+    height: 36px;
+    border-radius: 30px;
+}
+
+.anketa{
+    display: flex;
+    flex-direction: row;
+}
+
+.teammate{
+    color: var(--bright-basic-color-text-main-day, #1B1D23);
+text-align: center;
+
+/* Interactive/Int3 14 Medium */
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+.job{
+    color: var(--bright-basic-color-text-secondary-night, #7E8892);
+    text-align: center;
+    
+    /* Typesetting/P5 12 Regular */
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
+
+}
+
+.friend{
+
+    display: flex;
+    justify-content: right;
+}
