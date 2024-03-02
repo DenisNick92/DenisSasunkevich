@@ -1,0 +1,182 @@
+.container{
+width: 1280px;
+background-color: F5F5F5;
+color: black;
+margin: 0 auto;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+a{
+color:inherit;
+
+}
+
+
+.header_1{
+
+    height: 30px;
+    background-color: #EAEDEF;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-weight: 400;
+    color: black;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.r{
+    padding-right: 30px;
+    
+}
+
+
+.button_catalog{
+  background-color: #BA257D; 
+  color: white; 
+  width: 196px; 
+  height: 37px; 
+  border-radius: 5px; 
+  text-align: center; 
+  margin-left: 18px; 
+  padding: 10px;
+
+}
+
+.search{
+  width: 522px; 
+  height: 37px; 
+  border-radius: 5px; 
+  margin-left: 20px;
+  }
+
+
+.logotip{
+  float: right;
+  padding: 10px;
+  margin-top: -12px;
+ 
+}
+
+.enter{
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+ 
+}
+
+.izbrannoe{
+  width: 24px;
+  height: 22px;
+  margin-left: 13px;
+ 
+}
+
+.sravnenie{
+  width: 18px;
+  height: 21px;
+  margin-left: 15px;
+}
+
+
+.korzina{
+  width: 19px;
+  height: 17px;
+ margin-top: 4px;
+ margin-left: 10px;
+}
+
+.text{
+  font-family: Roboto;
+font-size: 10px;
+font-weight: 300;
+line-height: 12px;
+letter-spacing: 0em;
+text-align: center;
+color: rgba(51, 51, 51, 1);
+margin-top: 5px;
+}
+
+.spisok_ikon{
+  margin-top: 13px;
+}
+
+.menu{
+  text-transform: uppercase;
+  float: left;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.zvezda{
+  height: 13px;
+  width: 13px;
+}
+
+.menu_padding{
+  margin-top: 11px;
+}
+
+.banner{
+width: 955px;
+height: 434px;
+float: left;
+
+}
+.clear{
+  clear: both;
+}
+
+
+
+
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+    
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
