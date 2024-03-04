@@ -1,0 +1,50 @@
+.menu{
+    background-color: 
+    rgb(116, 209, 80); 
+    text-align: center; 
+    width: 100px; 
+    height: 500px; 
+    float: left;
+}
+
+.banner{
+    background-color: rgb(116, 209, 80); 
+    text-align: center; 
+    width: 100px; 
+    height: 500px; 
+    float: right;}
+
+
+.footer{
+    background-color: deepskyblue; 
+    text-align: center; 
+    height: 100px;}
+
+
+.header{
+    background-color: deepskyblue; 
+    text-align: center; 
+    height: 100px;}
+
+
+.rasporka{
+    clear: both; 
+    background-color: dimgrey; 
+    height: 0px;}
+
+
+@media screen and (min-width: 1000px) {
+    .content{
+        background-color: lightcoral;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .menu{float: none;
+            width:100%};
+    .banner{float: none;
+        width:100%};
+    .rasporka{clear: none;}
+    }
