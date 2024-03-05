@@ -269,7 +269,7 @@ cursor: pointer;
 
 .cursor{
 cursor: pointer;
-border-radius: 50%;}
+/* border-radius: 50%; */}
 
 .follow{
 display: flex;
@@ -307,7 +307,11 @@ border-radius: 8px;
 
 .img-requests{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    border-radius: 70%;
+    overflow: hidden;
+    height: max-content;
+
 }
 
 
@@ -335,9 +339,10 @@ border-radius: 8px;
     display: flex;
     flex-direction: row;
     border-radius: 8px;
-    margin: 7px 0px;
+    margin: 7px -9px;
     padding: 3px 9px;
-    cursor: pointer;
+
+    align-items: center;
 }
 
 
@@ -346,6 +351,7 @@ border-radius: 8px;
     background-color: rgba(227, 235, 255, 1); /* Цвет фона под ссылкой */ 
     color: rgba(27, 29, 35, 1); /* Цвет ссылки */ 
     stroke: #306BFF;
+    cursor: pointer;
     }
 
 button{
@@ -385,6 +391,7 @@ margin-bottom: 10px;
     line-height: 24px; 
     margin-bottom: 5px;
 
+    
 }
 
 .photo{
@@ -393,10 +400,10 @@ margin-bottom: 10px;
     border-radius: 30px;
     background-image: url('../img/a6b002da9feb0cce7f7a66e2d3406a5a.jpg');
     background-size: 370px;
-
+    
 }
 
-.viktorov{background-position: 148px 148px;}   
+.viktorov{background-position: 148px 148px; }   
 .konstantinova{background-position: 185px 148px;}  
 .martial{background-position: 38px 75px;}  
 
@@ -470,6 +477,7 @@ textarea:focus::-webkit-input-placeholder { color:transparent; } */
 .newpost{
     width: 100%;
     max-height: max-content;
+ 
    
 }
 path{
@@ -480,6 +488,15 @@ path{
    stroke: rgba(48, 107, 255, 1);
  
   }
+
+.attach:hover path{
+    stroke: rgba(48, 107, 255, 1);
+}
+.send:hover path{
+    fill: rgb(95, 95, 95);
+    stroke: #1B1D23;
+}
+
 
 .cursor:hover path{
     stroke: rgba(48, 107, 255, 1);
@@ -526,7 +543,9 @@ height: 24px;
     
     background-color: #2160ff;}
 
-
+    .buttonSave:hover {
+    
+        background-color: #2160ff;}
 
 
 .publish_bottom{
@@ -553,10 +572,12 @@ justify-content: flex-start;
     
 }
 
+
+
 .timeActive{
     color: #7E8892;
 text-align: center;
-padding-top: 1px;
+margin-top: 2px;
 font-family: Roboto;
 font-size: 13px;
 font-weight: 400; 
@@ -572,11 +593,19 @@ justify-content: flex-start;
     width: 32px;
     height: 32px;
     border-radius: 8px;
-    background: rgba(236, 236, 244, 1);
+    background-color: rgba(236, 236, 244, 1);
     border: none;
-    
-    
+       
 }
+
+.buttonsettings:hover{
+    background-color: rgb(229, 229, 231);
+}
+
+.buttonCancel:hover{
+    background-color: rgb(229, 229, 231);
+}
+
 
 .dott_button{
     width: 3px;
@@ -620,6 +649,7 @@ justify-content: flex-start;
 
 .post{
     width: 100%;
+    margin-top: -5px;
 
    
 }
@@ -733,7 +763,7 @@ overflow: hidden;
     font-size: 13px;
     font-weight: 400;
     line-height: 19px; 
-    margin-top: -3px;
+
 }
 
 
@@ -766,10 +796,10 @@ line-height: 20px;
    border-radius: 8px;
    width: 100%;
    display: flex;
-flex-direction: row;
 align-items: center;
 justify-content: space-between;
 padding-right: 5px;
+flex-wrap: nowrap;
 }
 
 .addstyle{
@@ -778,21 +808,27 @@ display: flex;
 flex-direction: row;    
 gap: 8px;
 justify-content: end;
-
+flex-wrap: nowrap;
+align-items: center;
 }
 
 .reque{
     display: flex;
     flex-direction: row;
     border-radius: 8px;
+    align-items: center;
 }
 
-
-
+.img-zapros{
+    display: flex;
+    align-items: center;
+   
+}
 
 .post-header{
     display: flex;
     justify-content: space-between;
+    
     
 }
 
@@ -878,14 +914,11 @@ justify-content: end;
     border: none;
     border-radius: 16px;
     background: #FFF;
-    border-radius: 16px;
-    background: #FFF;
     box-shadow: 0px 3px 25px 0px rgba(27, 29, 35, 0.20);
     text-align: center;
     animation: scale 0.5s ease;
-    padding: 16px 24px;
     overflow-y: scroll;
-    
+    padding: 0px;
 }
  
 .cmt::-webkit-scrollbar {
@@ -944,11 +977,71 @@ line-height: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position:-webkit-sticky; position:sticky; top:0;
+    padding: 18px 24px 30px 24px;
+    background-color: #FFF;
+   
 }
+
+.modal-main{
+    padding: 0px 24px;
+}
+
+.modal-footer{
+    display: flex;
+    background-color: #FFF;
+    position:-webkit-sticky; position:sticky; bottom:0;
+    border-top: 1px solid #E7E7E7;
+    gap: 10px;
+    justify-content: end;
+    padding: 18px 24px;
+    
+}
+
+.buttonCancel{
+    display: flex;
+    height: 32px;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 8px;
+    border: 1px solid #E7E7E7;
+    background-color: #ECECF4; 
+    color: #1B1D23;
+
+/* Typesetting/P3 14 Regular */
+font-family: Roboto;
+font-size: 14px;
+
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+text-decoration: none;
+}
+
+.buttonSave{
+    display: flex;
+height: 32px;
+padding: 10px 16px;
+justify-content: center;
+align-items: center;
+
+border-radius: 8px;
+background-color: #306BFF;
+color: #FFF;
+
+/* Typesetting/P3 14 Regular */
+font-family: Roboto;
+font-size: 14px;
+
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+
 
 .modal-ava{
     
-    margin-top: 30px;
+ 
     margin-bottom: 8px;
     border-radius: 50%;
     overflow: hidden;
@@ -1056,26 +1149,52 @@ padding: 10px 8px 0px 16px;
 
 }
 
+.permission-name{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 10px;
 
+}
 
+.permission-text{
+    color: #1B1D23;
+    font-family: Roboto;
+    font-size: 14px;
+    display: flex;
+    justify-content: start;
+    font-weight: 400;
+    line-height: 20px; 
+}
 
+.permission{
+    margin-top: 22px;
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-
+.check-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
 
 
 
 .checkbox-ios {
-	display: inline-block;    
+  
 	height: 28px;    
 	line-height: 28px;  
 	margin-right: 10px;      
 	position: relative;
 	vertical-align: middle;
 	font-size: 14px;
-	user-select: none;}
+	user-select: none;
+    display: flex;
+    align-items: center;
+}
 
     .checkbox-ios .checkbox-ios-switch {
         position: relative;	
