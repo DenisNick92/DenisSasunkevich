@@ -138,6 +138,8 @@ justify-content: center;
 height: 32px; 
 border-radius: 50%;
 overflow: hidden;
+min-width: 32px;
+min-height: 32px;
 }
 
 
@@ -408,11 +410,31 @@ margin-bottom: 10px;
 .martial{background-position: 38px 75px;}  
 
 
+.photo-pop{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    background-image: url('../img/a6b002da9feb0cce7f7a66e2d3406a5a.jpg');
+    background-size: 900px;
+    border: solid white 5px;
+    margin-top: -50px;
+}
+
+.viktorov-pop{background-position: 354px 360px; } 
+
+.pop{
+display: none;
+}
+
+.pop-up:hover .pop{display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+.pop-up{cursor: pointer;}
 
 
 .button-final{
     justify-content: space-between; 
     margin-right: 0;
+   margin-right: 0px;
+  padding-right: 0px;
     
 
 }
@@ -475,7 +497,7 @@ textarea:focus::-webkit-input-placeholder { color:transparent; } */
 
 
 .newpost{
-    width: 100%;
+    
     max-height: max-content;
  
    
@@ -595,6 +617,7 @@ justify-content: flex-start;
     border-radius: 8px;
     background-color: rgba(236, 236, 244, 1);
     border: none;
+    
        
 }
 
@@ -646,7 +669,7 @@ justify-content: flex-start;
 
 
 .post{
-    width: 100%;
+
     margin-top: -5px;
 
    
@@ -761,6 +784,7 @@ overflow: hidden;
     font-size: 13px;
     font-weight: 400;
     line-height: 19px; 
+    margin-top: -2px;
 
 }
 
@@ -974,6 +998,7 @@ line-height: 20px;
 
 .modal-main{
     padding: 0px 24px;
+    margin-bottom: 18px;
 }
 
 .modal-footer{
@@ -1142,7 +1167,7 @@ padding: 10px 8px 0px 16px;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    margin-top: 10px;
+
 
 }
 
@@ -1255,6 +1280,7 @@ padding: 10px 8px 0px 16px;
     gap: 24px;
     height: max-content;
     width: max-content;
+    margin: 0px 12px;
   
     
     
@@ -1277,6 +1303,7 @@ padding: 10px 8px 0px 16px;
         font-size: 22px;
         font-weight: 700;
         line-height: 30px; 
+        margin: 0;
     }
 
 .input-LogIn{
@@ -1295,9 +1322,10 @@ padding-left: 10px;
 .footer-LogIn{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
+
 }
 
 .next{
@@ -1410,7 +1438,7 @@ line-height: 20px;
   
    .can-toggle.can-toggle--size-small input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
     -webkit-transform: translate3d(44px, 0, 0);
-    transform: translate3d(44px, 0, 0);/*  */
+    transform: translate3d(41px, 0, 0);/*  */
    }
   
    .can-toggle.can-toggle--size-small label .can-toggle__switch {
@@ -1420,9 +1448,9 @@ line-height: 20px;
    }
   
    .can-toggle.can-toggle--size-small label .can-toggle__switch:before {
-    top: 13px;
-    left: 52.7px;
-    right: 45px;
+    top: 12.8px;
+    left: 51.7px;
+    right: 41px;
     color: #7E8892;
   font-family: Roboto;
   font-size: 14px;
@@ -1435,11 +1463,11 @@ line-height: 20px;
   
    }
    .can-toggle.can-toggle--size-small label .can-toggle__switch:after {
-    top: 3px;
-    left: 2px;
-    border-radius: 1px;
+    top: 3.4px;
+    left: 4px;
+    border-radius: 5px;
     width: 40px;
-    height: 34px;
+    height: 33px;
     line-height: 26px;
     font-size: 14px;   
     font-family: Roboto;
@@ -1448,3 +1476,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* размер бегунка */
    }
+
+    .form-login{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
