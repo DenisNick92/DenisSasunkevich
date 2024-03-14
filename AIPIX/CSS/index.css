@@ -1451,7 +1451,7 @@ line-height: 20px;
    }
   
    .can-toggle.can-toggle--size-small label .can-toggle__switch:before {
-    top: 12.8px;
+    top: 13.0px;
     left: 51.7px;
     right: 41px;
     color: #7E8892;
@@ -1466,7 +1466,7 @@ line-height: 20px;
   
    }
    .can-toggle.can-toggle--size-small label .can-toggle__switch:after {
-    top: 3.4px;
+    top: 3.6px;
     left: 4px;
     border-radius: 5px;
     width: 40px;
