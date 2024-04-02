@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'SchoolBook';
+    src: url('fontconverter/SchoolBookC.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaNew';
+    src: url('fontconverter (1)/FuturaNewBold-Reg.ttf');
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffefe;
+    max-width: 1800px;
+
+}
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 60px 80px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    font-family: 'FuturaNew', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #c3b9b5;
+}
+
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header div span {
+    font-family: 'FuturaNew', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffc59e;
+}
+
+main h1 {
+    font-family: 'SchoolBook';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 137%;
+    color: #080606;
+    margin-top: 20px;
+}
+
+main {
+    margin: 70px 80px;
+}
+
+.main-signUp {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.button-signUp {
+    width: 284px;
+    height: 66px;
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #fff;
+    background-color: #ffc59e;
+    border-radius: 33px;
+    border-color: transparent;
+    box-shadow: 0 4px 20px 0 #ffc59e;
+    margin: 0;
+    padding: 0;
+
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 200px;
+
+}
+
+.media-button {
+    width: 40px;
+    height: 40px;
+    background-color: #c3b9b5;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    border: none;
+
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    11.11% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    44.44% {
+        opacity: 1;
+    }
+
+    55.55% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.background-img {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.background-img img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.background-img img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.background-img img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.background-img img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+
+
+
+
+
+.product {
+    width: 320px;
+    height: 220px;
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 133%;
+    color: #59443f;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0 #afaeae;
+    margin: 24px 24px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.services {
+    width: 1400px;
+    display: flex;
+    flex-direction: row;
+    margin: 150px 184px 0px 184px;
+    flex-wrap: wrap;
+
+}
+
+.product:hover path {
+    fill: brown;
+    transition: 0.5s linear;
+
+}
+
+.product:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.5s linear;
+
+}
+
+.title {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #080606;
+}
+
+.text {
+    width: 480px;
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #59443f;
+
+}
+
+.history {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.history a {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: #ffc59e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.history:hover path {
+    fill: brown;
+    transition: 0.5s linear;
+
+}
+
+.link:hover {
+    color: brown;
+    transition: 0.5s linear;
+
+}
+
+.specialist {
+    width: 178px;
+    height: 178px;
+    border-radius: 50%;
+
+}
+
+.history ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.specialist:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.achievements span {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 700;
+    font-size: 144px;
+    line-height: 76%;
+    color: #59443f;
+}
+
+.achievements div {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 137%;
+    color: #080606;
+
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+
+.achievements img {
+    z-index: 2;
+    margin-top: -50px;
+    overflow: hidden;
+}
