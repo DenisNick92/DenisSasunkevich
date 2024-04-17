@@ -1,29 +1,36 @@
 @font-face {
-    font-family: 'SchoolBook';
-    src: url('fontconverter/SchoolBookC.ttf');
+    font-family: "SchoolBook";
+    src: url("fontconverter/SchoolBookC.ttf");
 }
 
 @font-face {
-    font-family: 'FuturaNew';
-    src: url('fontconverter (1)/FuturaNewBold-Reg.ttf');
+    font-family: "FuturaNew";
+    src: url("fontconverter (1)/FuturaNewBold-Reg.ttf");
 }
 
+@font-face {
+    font-family: "FuturaNewBook";
+    src: url("futura-new/FuturaNewBook-Reg.ttf");
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fffefe;
-    max-width: 1800px;
 
 }
 
 header {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 60px 80px;
+    padding: 60px 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #fbf8f8;
+
 }
 
 header ul {
@@ -31,11 +38,21 @@ header ul {
     flex-direction: row;
     gap: 50px;
     align-items: center;
-    font-family: 'FuturaNew', sans-serif;
+    font-family: "FuturaNew", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
+
+
+}
+
+header ul li a {
+    text-decoration: none;
     color: #c3b9b5;
+}
+
+header ul li a:hover {
+    color: #ffc59e
 }
 
 
@@ -46,7 +63,7 @@ header div {
 }
 
 header div span {
-    font-family: 'FuturaNew', sans-serif;
+    font-family: "FuturaNew", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
@@ -54,7 +71,7 @@ header div span {
 }
 
 main h1 {
-    font-family: 'SchoolBook';
+    font-family: "SchoolBook", sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 137%;
@@ -66,12 +83,15 @@ main {
     margin: 70px 80px;
 }
 
+body {
+    background-color: #fbf8f8;
+}
+
 .main-signUp {
     margin-top: 130px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
 .button-signUp {
@@ -88,29 +108,32 @@ main {
     box-shadow: 0 4px 20px 0 #ffc59e;
     margin: 0;
     padding: 0;
-
+    margin-bottom: 200px;
 }
 
 .media {
+
     display: flex;
     flex-direction: row;
     gap: 50px;
-    margin-top: 200px;
 
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .media-button {
     width: 40px;
     height: 40px;
-    background-color: #c3b9b5;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-color: transparent;
     border: none;
-
 }
 
 @keyframes fade {
@@ -127,7 +150,7 @@ main {
     }
 
     44.44% {
-        opacity: 1;
+        opacity: 0;
     }
 
     55.55% {
@@ -141,11 +164,28 @@ main {
 
 .background-img {
     position: relative;
-    width: 600px;
-    height: 600px;
+    width: auto;
+
 }
 
-.background-img img {
+.article {
+    position: relative;
+    width: auto;
+    height: 420px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.media-button:hover path {
+    fill: #ffc59e;
+    transition: 0.5s linear;
+}
+
+.article h1 {
     position: absolute;
     width: 100%;
     height: auto;
@@ -156,6 +196,31 @@ main {
     animation-duration: 15s;
     animation-iteration-count: infinite;
 }
+
+.article h1:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.article h1:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.article h1:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.background-img img {
+    position: absolute;
+    width: 600px;
+    height: auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
 
 .background-img img:nth-child(1) {
     animation-delay: 0s;
@@ -168,11 +233,6 @@ main {
 .background-img img:nth-child(3) {
     animation-delay: 10s;
 }
-
-
-
-
-
 
 .product {
     width: 320px;
@@ -194,25 +254,26 @@ main {
 }
 
 .services {
-    width: 1400px;
+    /* min-width: 1600px; */
+    max-width: 1700px;
     display: flex;
-    flex-direction: row;
-    margin: 150px 184px 0px 184px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    /* margin: 150px 184px 0px 184px; */
     flex-wrap: wrap;
-
+    flex-direction: row;
 }
 
 .product:hover path {
     fill: brown;
     transition: 0.5s linear;
-
 }
 
 .product:hover {
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s linear;
-
 }
 
 .title {
@@ -230,7 +291,6 @@ main {
     font-size: 20px;
     line-height: 150%;
     color: #59443f;
-
 }
 
 .history {
@@ -240,6 +300,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    background-color: #fbf8f8;
 }
 
 .history a {
@@ -257,20 +318,18 @@ main {
 .history:hover path {
     fill: brown;
     transition: 0.5s linear;
-
 }
 
 .link:hover {
     color: brown;
     transition: 0.5s linear;
-
 }
 
 .specialist {
     width: 178px;
     height: 178px;
     border-radius: 50%;
-
+    overflow: hidden;
 }
 
 .history ul {
@@ -299,7 +358,6 @@ main {
     font-size: 80px;
     line-height: 137%;
     color: #080606;
-
 }
 
 .achievements {
@@ -307,11 +365,786 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 300px;
+    margin: 300px 0px;
+
 }
 
 .achievements img {
-    z-index: 2;
     margin-top: -50px;
     overflow: hidden;
+}
+
+.why-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.why-name {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 133%;
+    color: #080606;
+    margin-bottom: 35px;
+}
+
+.why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid {
+    /* min-width: 1900px; */
+    max-width: 2000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.why-title {
+
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #080606;
+
+}
+
+
+.bird {
+    margin-left: 350px;
+    background-color: transparent;
+}
+
+.mobile {
+    background-color: #ffc59e;
+    padding: 230px 230px 0px 230px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.mobile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 40px;
+}
+
+
+.soon {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 67%;
+
+    color: #fff;
+}
+
+.app {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 137%;
+    color: #fff;
+    width: 826px;
+    height: 300px;
+
+}
+
+.app-img {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.mobile>img:nth-child(2) {
+    width: 400px;
+    height: 550px;
+    padding-bottom: 110px;
+    margin-left: -120px;
+    margin-top: 130px;
+}
+
+.mobile>img:nth-child(3) {
+    width: 350px;
+    height: 760px;
+    padding-bottom: 110px;
+    margin-left: -155px;
+    margin-top: -30px;
+}
+
+.proba {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+
+
+}
+
+.contacts-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+
+.contact {
+    display: flex;
+    justify-content: start;
+
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    background-color: #59443f;
+    padding: 80px 230px 60px 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-top div {
+    display: flex;
+    flex-direction: column;
+}
+
+#Aibolit {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+}
+
+.footer-text {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.links {
+    margin-left: 100px;
+    margin-top: 30px;
+    display: flex;
+    gap: 100px;
+
+}
+
+.links a,
+.achievements span,
+.achievements div {
+    white-space: nowrap;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.link a,
+.links a {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+}
+
+.mail a {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-media {
+    margin-left: 260px;
+
+}
+
+.footer-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.page-name {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 137%;
+    color: #080606;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 70px;
+}
+
+.page-link {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #c3b9b5;
+    text-decoration: none;
+}
+
+.page-menu a:hover {
+    color: #ffc59e
+}
+
+.page-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-content img {
+    border-radius: 20px;
+    width: 900px;
+    height: 470px;
+    margin-bottom: 50px;
+
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    gap: 130px;
+    justify-content: center;
+}
+
+.about {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #59443f;
+    text-align: justify;
+    margin-bottom: 100px;
+    width: 950px;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 130px;
+    height: 130px;
+    margin: 0px;
+}
+
+.text-exp {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 133%;
+    color: #ffc59e;
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 460px;
+    box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 30px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text-style-name {
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #c3b9b5;
+    margin-bottom: 10px;
+}
+
+.profile-text-style-text {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #080606;
+    margin-bottom: 20px;
+
+}
+
+.profile-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 950px;
+}
+
+.new-page {
+    margin-top: 100px;
+
+}
+
+.new-marg {
+    margin-top: 30px;
+
+}
+
+.privacy {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 133%;
+    color: #080606;
+    margin: 50px;
+
+}
+
+.input {
+    border: 1px solid #ede9e8;
+    border-radius: 20px;
+    width: 909px;
+    height: 57px;
+    background: #fff;
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #59443f;
+    padding-left: 10px;
+
+}
+
+.new-marg textarea {
+    width: 909px;
+    height: 171px;
+    border: 1px solid #ede9e8;
+    border-radius: 20px;
+    background: #fff;
+    resize: none;
+    padding: 10px;
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #59443f;
+}
+
+
+.links .link a:hover,
+.mail a:hover,
+.links a:hover {
+    color: #ffc59e;
+
+}
+
+a>img:hover {
+    transform: scale(1.1);
+    transition: 0.5s linear;
+}
+
+.input-mod {
+    border: 1px solid #ede9e8;
+    border-radius: 20px;
+    width: 290px;
+    height: 57px;
+    background: #fff;
+    padding: 0px 10px;
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #59443f;
+}
+
+.input-style {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    border-radius: 20px;
+
+
+
+}
+
+.input-type {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #59443f;
+}
+
+.button-send {
+    border-radius: 33px;
+    width: 284px;
+    height: 66px;
+    box-shadow: 0 4px 20px 0 #ffc59e;
+    background: #ffc59e;
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    ;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(48%) sepia(13%) saturate(3500%) brightness(90%) contrast(30%);
+}
+
+.button-signUp:hover,
+.button-send:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.css-modal-open:hover,
+.css-modal-open:active,
+.css-modal-open:focus {
+    color: #FFF;
+}
+
+.css-modal-open:before {
+    content: '';
+    position: absolute;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+/* Контейнер, который затемняет страницу */
+.css-modal-target {
+    display: none;
+}
+
+.css-modal-target:target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Модальное окно */
+.css-modal-target .cmt {
+    z-index: 8;
+    width: 500px;
+    height: 244px;
+    transition: 0.5s;
+    border: none;
+    border-radius: 16px;
+    background: #FFF;
+    text-align: center;
+    animation: scale 0.5s ease;
+    padding: 0px;
+}
+
+.text-modal {
+
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #59443f;
+}
+
+
+.close {
+
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 33px;
+    width: 284px;
+    height: 66px;
+    box-shadow: 0 4px 20px 0 #ffc59e;
+    background: #ffc59e;
+    font-family: "FuturaNew", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    border: none;
+
+}
+
+
+.modal-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.input-type .button-send {
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 900px;
+    height: 255px;
+    text-decoration: none;
+
+}
+
+.blog-post-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.blog-post img {
+    height: 255px;
+    width: 255px;
+}
+
+.blog-name {
+    font-family: "SchoolBook", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 167%;
+    color: #080606;
+}
+
+.blog-date {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #c3b9b5;
+    margin-bottom: -20px;
+}
+
+.blog-text {
+    font-family: "FuturaNewBook", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #59443f;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.opacity {
+    opacity: 50%;
+}
+
+.opacity .blog-date {
+    color: #59443f;
+
+}
+
+@media screen and (max-width: 1501px) {
+    .map {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    .achievements {
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+
+    .main .grid {
+        margin: 70px 0px;
+    }
+
+    /* .grid .services {
+        max-width: 600px;
+        min-width: 600px;
+    } */
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-media {
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
+
+    footer {
+        padding-left: 20px;
+    }
+
+    .footer-app {
+        justify-content: flex-start;
+    }
+
+}
+
+/* @media screen and (max-width: 1350px) {
+
+    .background-img,
+    .mobile>img {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 1240px) {
+
+    .page {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+
+}
+
+#year2001,
+#year2007,
+#year2009,
+#year20022,
+#about_us,
+#specialists {
+    height: 250px;
+    margin-top: -190px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 1350px) {
+
+    .background-img img {
+        width: 500px;
+    }
+
+    .main h1 {
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .background-img img {
+        width: 400px;
+    }
+
+    .article h1 {
+        font-size: 40px;
+    }
+
 }
