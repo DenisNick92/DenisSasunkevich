@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let name = prompt('Введите имя');
+        while (name === "" || name[0] === ' ') {
+        name = prompt('Введите корректное имя')}
+
+
+        let surname = prompt('Введите фамилию');
+        while (surname === "" || surname[0] === ' ') {
+        surname = prompt('Введите корректно фамилию')}
+
+
+        let second_name = prompt('Введите отчество');
+
+
+        let age = prompt('Введите ваш возраст в годах');
+        while (age === "" || isNaN(age) || age[0] === ' ') {
+        age = prompt('Введите корректно ваш возраст в годах')}
+        age = parseFloat(age);
+
+
+        let gender = confirm('Ваш пол - мужской?')
+        if (gender === true) {
+            gender = 'мужской'
+        } else {
+            gender = 'женский'
+        }
+        
+
+
+        let pens = '';
+
+
+        if ((gender === 'мужской') && (age >= 63))
+         {
+            pens = 'да'
+         }
+         if ((gender === 'мужской') && (age < 63))
+         {
+            pens = 'нет'
+         }
+
+         if ((gender === 'женский') && (age < 58))
+         {
+            pens = 'нет'
+         } 
+         
+         if ((gender === 'женский') && (age > 58))
+         {
+            pens = 'да'
+         } 
+        
+        alert(
+            "ваше ФИО: " + name + " " + surname + " " + second_name + 
+            "\nваш возраст в годах: " + age + 
+            "\nваш возраст в днях: " + (365 * age + Math.floor(age / 4)) +
+            "\nчерез 5 лет вам будет: " + (age + 5) +
+            "\nваш пол: " + gender +
+            "\nвы на пенсии: " + pens)
+    </script>
+</body>
+
+</html>
